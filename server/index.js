@@ -9,10 +9,10 @@ app.use(cors());
 app.use(express.json());
 
 // Import routes
-const sampleRoutes = require('./routes/sample');
+const conversionsRoute = require('./routes/conversions');
 
 // Use routes
-app.use('/api', sampleRoutes);
+app.use('/api', conversionsRoute);
 
 // Start server
 app.listen(PORT, () => {
